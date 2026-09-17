@@ -1,0 +1,33 @@
+/* 빌드 단계를 두지 않으므로 전처리기 없이 순수 CSS 로만 작성한다. */
+:root {
+  --ink: #1a1d21;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --bg: #ffffff;
+  --accent: #0b4da2;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Malgun Gothic", "맑은 고딕", -apple-system, system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+header { padding: 24px 32px; border-bottom: 3px solid var(--accent); }
+header h1 { margin: 0; font-size: 20px; letter-spacing: 0.02em; }
+header .sub { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+
+main { padding: 24px 32px; max-width: 960px; }
+
+section { margin-bottom: 32px; }
+section h2 { font-size: 15px; margin: 0 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+
+dl { display: grid; grid-template-columns: 160px 1fr; gap: 4px 16px; margin: 0; font-size: 14px; }
+dt { color: var(--muted); }
+dd { margin: 0; }
+
+.error { color: #b42318; }

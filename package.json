@@ -1,0 +1,16 @@
+{
+  "name": "aiedu",
+  "version": "0.0.1",
+  "private": true,
+  "description": "개발 환경 뼈대 (도메인 미정 — 설계문서 반영 전)",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "wrangler deploy --dry-run",
+    "db:local": "wrangler d1 execute aiedu --local --file=db/schema.sql",
+    "db:remote": "wrangler d1 execute aiedu --remote --file=db/schema.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^4.133.0"
+  }
+}
